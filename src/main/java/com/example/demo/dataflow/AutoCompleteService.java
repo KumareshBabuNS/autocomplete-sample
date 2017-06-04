@@ -26,6 +26,7 @@ public class AutoCompleteService implements AutoCompleteRepository{
         BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 
         String queryString = String.format("SELECT tag, count FROM `%s` , UNNEST(tags) WHERE prefix = \'%s\' LIMIT 100", tableName, prefix);
+        System.out.println(queryString);
 
         QueryJobConfiguration queryConfig =
                 QueryJobConfiguration.newBuilder(queryString)

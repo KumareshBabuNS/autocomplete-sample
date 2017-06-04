@@ -18,3 +18,7 @@ target/
 build/
 
 *.log*
+
+account.json
+env.sh
+terraform.tfstate*
