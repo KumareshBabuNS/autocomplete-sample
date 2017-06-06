@@ -18,7 +18,7 @@ public class AutoCompleteController {
 
     @RequestMapping("/autocomplete")
     public List<String> autocomplete(@RequestParam("prefix")  String prefix, HttpServletResponse response) throws Exception {
-        response.setHeader("Cache-Control", "public;s-maxage=30;max-age=30");
+        response.setHeader("Cache-Control", "public, s-maxage=30, max-age=30");
         return autoCompleteService.getAutoComplete(prefix).getCandidates();
     }
 }
