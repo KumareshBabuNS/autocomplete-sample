@@ -24,7 +24,7 @@ cd /home/sding
 git clone https://github.com/datianshi/autocomplete-sample
 cd autocomplete-sample
 mvn clean package -Dmaven.test.skip=true
-SPRING_CACHE_TYPE=none java -jar target/demo-0.0.1-SNAPSHOT.jar &
+SPRING_CACHE_TYPE=none java -jar target/demo-0.0.1-SNAPSHOT.jar > tomcat.log &
 
 
 EOT
@@ -60,7 +60,7 @@ cd /home/sding
 git clone https://github.com/datianshi/autocomplete-sample
 cd autocomplete-sample
 mvn clean package -Dmaven.test.skip=true
-SPRING_CACHE_TYPE=none java -jar target/demo-0.0.1-SNAPSHOT.jar &
+SPRING_CACHE_TYPE=none java -jar target/demo-0.0.1-SNAPSHOT.jar > tomcat.log &
 
 
 EOT

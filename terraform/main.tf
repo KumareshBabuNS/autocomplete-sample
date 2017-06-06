@@ -92,7 +92,7 @@ resource "google_compute_backend_service" "backend" {
   port_name   = "http"
   protocol    = "HTTP"
   timeout_sec = 10
-  enable_cdn  = false
+  enable_cdn  = true
 
   backend {
     group = "${google_compute_instance_group.webserverscentral.self_link}"

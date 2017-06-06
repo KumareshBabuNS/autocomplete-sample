@@ -13,11 +13,10 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Ignore
 public class AutoCompleteServiceTest {
 
     @Autowired
-    AutoCompleteService autoCompleteService;
+    AutoCompleteRepository autoCompleteService;
 
 
     @Test
